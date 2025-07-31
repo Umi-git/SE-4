@@ -1,0 +1,81 @@
+Last login: Wed Jul 30 15:40:50 on ttys000
+umi@Mac ~ % code
+umi@Mac ~ % clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+umi@Mac ~ % pwd
+/Users/umi
+umi@Mac ~ % cd my_project
+umi@Mac my_project % cd src
+umi@Mac src % rm -r main.txt
+umi@Mac src % echo main.txt
+main.txt
+umi@Mac src % code main.txt
+umi@Mac src % cd
+umi@Mac ~ % cd my_project
+umi@Mac my_project % cd src
+umi@Mac src % cp main.txt
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-aclpSsvXx] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-aclpSsvXx] source_file ... target_directory
+umi@Mac src % cp main.txt /test/main.txt
+cp: /test/main.txt: No such file or directory
+umi@Mac src % pwd    
+/Users/umi/my_project/src
+umi@Mac src % cd
+umi@Mac ~ % pwd
+/Users/umi
+umi@Mac ~ % cd my_project
+umi@Mac my_project % cp main.txt/my_project/test
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-aclpSsvXx] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-aclpSsvXx] source_file ... target_directory
+umi@Mac my_project % cd
+umi@Mac ~ % cd my_project/test
+umi@Mac test % ls
+umi@Mac test % ls-l
+zsh: command not found: ls-l
+umi@Mac test % ls -l
+total 0
+umi@Mac test % cp main.txt
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-aclpSsvXx] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-aclpSsvXx] source_file ... target_directory
+umi@Mac test % pwd
+/Users/umi/my_project/test
+umi@Mac test % cd
+umi@Mac ~ % cd my_project
+umi@Mac my_project % ls
+src	test
+umi@Mac my_project % cp src/main.txt test/
+umi@Mac my_project % pwd    
+/Users/umi/my_project
+umi@Mac my_project % cd test
+umi@Mac test % ls
+main.txt
+umi@Mac test % mv main_test.txt
+usage: mv [-f | -i | -n] [-hv] source target
+       mv [-f | -i | -n] [-v] source ... directory
+umi@Mac test % ls
+main.txt
+umi@Mac test % mv main.txt main_test.txt
+umi@Mac test % ls
+main_test.txt
+umi@Mac test % code main_test.txt
+umi@Mac test % 
